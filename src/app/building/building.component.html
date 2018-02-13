@@ -1,0 +1,17 @@
+
+ <ng-select [items]="data"
+  bindLabel="fullName"
+  bindValue="id"
+  placeholder="Select user"
+  [(ngModel)]="selectedCity">
+<ng-template ng-header-tmp>
+  Custom header
+</ng-template>
+<ng-template ng-footer-tmp>
+ Total {{data.length}}
+</ng-template>
+</ng-select>
+<p>
+  Selected user: {{selectedCity}}
+</p>
+<hr />
